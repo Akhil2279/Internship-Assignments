@@ -1,4 +1,3 @@
-# Simple Expression Calculator CLI
 
 def main():
     print("Welcome to Simple Expression Calculator!")
@@ -13,7 +12,6 @@ def main():
             break
 
         try:
-            # Evaluate expression safely
             allowed_names = {"abs": abs, "round": round}
             result = eval(expr, {"__builtins__": None}, allowed_names)
             print("Result:", result)
