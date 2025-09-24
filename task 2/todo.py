@@ -1,5 +1,4 @@
-# Simple To-Do List App
-# 100% human-written and beginner-friendly
+
 
 TODO_FILE = "todo.txt"
 
