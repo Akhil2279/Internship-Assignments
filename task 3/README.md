@@ -82,3 +82,8 @@ HTTP status codes are 3-digit responses from a server when you request a webpage
 - 404 – Not Found (page doesn’t exist)
 - 500 – Internal Server Error (server problem)
 
+### Sample Output Screenshot
+
+![Sample Run](images/sample_run.png)
+
+
