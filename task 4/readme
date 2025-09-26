@@ -1,0 +1,114 @@
+Flask User API
+
+A simple RESTful API built with Flask to manage users. Supports basic CRUD operations (Create, Read, Update, Delete) for user data.
+
+Features:
+- Create User (POST /users)
+- Get All Users (GET /users)
+- Get Single User (GET /users/<user_id>)
+- Update User (PUT /users/<user_id>)
+- Delete User (DELETE /users/<user_id>)
+All responses are in JSON format.
+
+Requirements:
+- Python 3.7+
+- Flask
+
+Install Flask using pip:
+pip install flask
+
+Usage:
+1. Run the server:
+python app.py
+
+2. Access the home page:
+GET http://127.0.0.1:5000/
+Returns: "Welcome to the User API!"
+
+API Endpoints:
+
+1. Get all users
+URL: /users
+Method: GET
+Response:
+[
+    {
+        "id": 2,
+        "name": "Stalin",
+        "email": "Stalin@example.com"
+    }
+]
+
+2. Get a single user
+URL: /users/<user_id>
+Method: GET
+Response (if found):
+{
+    "id": 2,
+    "name": "Stalin",
+    "email": "stalin@example.com"
+}
+Response (if not found):
+{
+    "message": "User not found"
+}
+
+3. Create a new user
+URL: /users
+Method: POST
+Request Body:
+{
+    "name": "Akhil",
+    "email": "Akhil@example.com"
+}
+Response:
+{
+    "id": 3,
+    "name": "John Doe",
+    "email": "john@example.com"
+}
+
+4. Update an existing user
+URL: /users/<user_id>
+Method: PUT
+Request Body (Provide only fields to update):
+{
+    "name": "lakshman"
+}
+Response:
+{
+    "id": 1,
+    "name": "lakshman",
+    "email": "john@example.com"
+}
+
+5. Delete a user
+URL: /users/<user_id>
+Method: DELETE
+Response (if deleted):
+{
+    "message": "User deleted successfully"
+}
+Response (if not found):
+{
+    "message": "User not found"
+}
+
+6. Get all users
+URL: /users
+Method: GET
+Response:
+[
+    {
+        "id": 3,
+        "name": "Akhil",
+        "email": "akhil@example.com"
+    }
+]
+
+Notes:
+- The API stores users in memory, so all data is lost when the server restarts.
+- Each user is assigned a unique ID automatically.
+
+License:
+This project is open-source and free to use.
