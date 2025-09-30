@@ -1,0 +1,46 @@
+# Task 5: Data Analysis on CSV Files  
+
+##  Objective  
+Analyze sales data using **Python** and **Pandas** to gain business insights.  
+
+---
+
+## 🛠 Tools Used  
+- Python 3  
+- Pandas (Data Analysis)  
+- Matplotlib (Visualization)  
+- Jupyter Notebook / Google Colab  
+
+---
+
+##  Project Files  
+- `sales_data.csv` → Sample dataset containing sales records  
+- `analysis.ipynb` → Jupyter Notebook for loading, analyzing, and visualizing data  
+
+---
+
+##  Dataset Details  
+The dataset contains the following columns:  
+
+- **Date** → Transaction date  
+- **Product** → Product name  
+- **Category** → Product category (Electronics, Fashion, etc.)  
+- **Sales** → Total sales amount (₹)  
+- **Quantity** → Number of units sold  
+
+### Example Data:  
+| Date       | Product     | Category    | Sales | Quantity |
+|------------|------------|-------------|-------|----------|
+| 2025-01-01 | Mobile     | Electronics | 20000 | 5        |
+| 2025-01-01 | Laptop     | Electronics | 50000 | 2        |
+| 2025-01-02 | Shoes      | Fashion     | 3000  | 4        |
+
+---
+
+## 🚀 Steps to Run  
+
+1. Clone this repository or download the project folder.  
+2. Make sure you have **Python** and the required libraries installed:  
+
+   ```bash
+   pip install pandas matplotlib
