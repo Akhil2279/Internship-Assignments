@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Hi, I'm Akhil Bethapudi</h1>
+            <p>A passionate Python Developer specializing in web applications.</p>
+            <img src="{{ url_for('static', filename='img/spidy.jpg') }}" alt="Your Profile Picture" width="150" height="150">
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am Akhil, an aspiring Full Stack/Python Developer with strong skills in Python, Django, FastAPI, Flask, JavaScript, HTML, CSS, and database management using MySQL and PostgreSQL. I have hands-on experience in building real-world projects, including REST API development, data handling with Pandas/CSV, and microservices using Flask. I am proficient in Git/GitHub for version control and project collaboration, and I have also worked on automation and web scraping tasks. Passionate about coding and problem-solving, I aim to write clean, maintainable code and am eager to apply my knowledge in internships or entry-level roles to gain practical industry experience..</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>Flask</li>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Databases (e.g., SQL)</li>
+                <li>API</li>
+                <li>Git</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-item">
+                <h3>UP Yatra</h3>
+                <p>The UP Yatra project is a web-based application designed to showcase and manage information about significant cultural, historical, and spiritual destinations across Uttar Pradesh. The project allows users to explore details of different locations, view descriptions, and understand their importance. It was built using Python, Django/Flask (whichever you used) for the backend, with HTML, CSS, and JavaScript for the frontend. A structured database (MySQL/PostgreSQL) was integrated to store and manage destination details. The project highlights my ability to design user-friendly web applications, implement RESTful APIs, and manage dynamic content efficiently..</p>
+                <a href="{{ github_link }}" target="_blank">View Project</a>
+            </div>
+            <div class="project-item">
+                <h3>Backend API Developement</h3>
+                <p>I worked on developing RESTful APIs for the KPA Form project using FastAPI and PostgreSQL, ensuring the endpoints aligned with the SwaggerHub documentation and were ready to integrate with a Flutter frontend. The implementation included a GET API for fetching Wheel Specifications and a POST API for submitting Bogie Checksheet data. The backend was structured with models (SQLAlchemy), schemas (Pydantic for validation), routes, and a main application entry point. I also upgraded the codebase to be compatible with Pydantic v2.x, resolving ForwardRef evaluation issues. The project emphasized clean architecture, proper data validation, error handling, and JSON-based responses, and I thoroughly tested the APIs using Postman to ensure reliability and accuracy.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 [Akhil Bethapudi]. All rights reserved.</p>
+    </footer>
+</body>
+</html>

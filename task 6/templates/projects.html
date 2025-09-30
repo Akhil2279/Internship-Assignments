@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - UP Yatra</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f9fa; }
+        header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+        section { padding: 20px; }
+        .project-card {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 80%;
+        }
+        .btn {
+            background: #28a745;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .btn:hover { background: #218838; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+    </header>
+    <section>
+        <div class="project-card">
+            <h2>UP Yatra Project</h2>
+            <p>A web-based application that showcases cultural, historical, and spiritual destinations across Uttar Pradesh. 
+               Built with Flask/Django for backend and HTML, CSS, and JavaScript for frontend.</p>
+            <a href="{{ url_for('up_yatra') }}" class="btn">View Details</a>
+            <a href="https://github.com/Akhil2279/HISTORICAL_TOUR_AND_TRAVEL" target="_blank" class="btn">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h2>KPA API Development</h2>
+            <p>Developed RESTful APIs for the KPA Form project using FastAPI and PostgreSQL, including GET and POST endpoints, 
+               validation with Pydantic, and integration testing with Postman.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+    </section>
+</body>
+</html>
