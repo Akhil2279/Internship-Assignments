@@ -1,0 +1,36 @@
+# Task 7: Image Resizer Tool
+
+## Objective
+Resize and convert images in **batch** using Python.
+
+---
+
+## Tools
+- Python 3.x  
+- [Pillow (PIL)](https://pypi.org/project/Pillow/)  
+
+---
+
+##  Deliverables
+A script that **resizes all images in a folder** and saves them to an output folder.
+
+---
+
+##  How It Works
+1. Reads images from an **input folder** (`images/`).  
+2. Resizes them to a fixed size (default: `300x300`).  
+3. Saves the resized images into an **output folder** (`resized_images/`).  
+
+---
+
+## Hints / Mini Guide
+- Use **os** module to read files from the folder.  
+- Use **PIL.Image** to open, resize, and save images.  
+
+---
+
+## Setup Instructions
+1. Clone this repository or download the script.  
+2. Install Pillow:
+   ```bash
+   pip install pillow
