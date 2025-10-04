@@ -1,0 +1,40 @@
+# Task 8: Build a Chatbot using if-else (Upgraded with Wikipedia API)
+
+## Objective
+Create a **rule-based chatbot** using Python and extend it with **Wikipedia integration** so that it can answer real-world questions.
+
+---
+
+## Tools
+- Python 3.x
+- `wikipedia` Python package
+
+---
+
+## Deliverables
+- A Python script (`chatbot.py`) that simulates a chatbot with knowledge-based answers.
+
+---
+
+## Hints / Mini Guide
+1. Use input/output loops for conversation.  
+2. Use simple `if-elif-else` for predefined responses.  
+3. For real questions, fetch information from **Wikipedia API**.  
+
+---
+
+## How it Works
+- The chatbot takes user input in a loop.  
+- If input matches predefined rules (like greetings, time, or name), it gives a fixed response.  
+- Otherwise, it searches **Wikipedia** and returns a short summary as the answer.  
+- The chat ends when the user types **"bye"**.  
+
+---
+
+## Setup Instructions
+
+1. Clone this repo or download the script.
+2. Install dependencies:
+
+```bash
+pip install wikipedia

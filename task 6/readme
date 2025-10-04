@@ -1,0 +1,84 @@
+
+## Technologies Used
+
+*   **Python 3.x:** The core programming language.
+*   **Flask:** A lightweight Python web framework for building the application.
+*   **HTML5:** For structuring the web pages.
+*   **CSS3:** For styling and design.
+*   **Jinja2:** Flask's default templating engine (used implicitly with `render_template`).
+
+## Setup and Installation
+
+Follow these steps to get the project up and running on your local machine.
+
+1.  **Clone the Repository (or create the files manually):**
+
+    If this were a Git repository, you would clone it:
+    ```bash
+    git clone <repository_url>
+    cd my_portfolio
+    ```
+    Otherwise, ensure you have the `my_portfolio` folder with `app.py`, `templates/`, and `static/` subdirectories as described in the "Project Structure" section.
+
+2.  **Create a Virtual Environment (Recommended):**
+
+    It's good practice to use a virtual environment to manage dependencies.
+    ```bash
+    python -m venv venv
+    ```
+
+3.  **Activate the Virtual Environment:**
+
+    *   **On Windows:**
+        ```bash
+        .\venv\Scripts\activate
+        ```
+    *   **On macOS/Linux:**
+        ```bash
+        source venv/bin/activate
+        ```
+
+4.  **Install Dependencies:**
+
+    Install Flask. If you were tracking dependencies, you'd use a `requirements.txt` file. For this task, it's just Flask:
+    ```bash
+    pip install Flask
+    ```
+    *(Optional: To create a `requirements.txt` for future use: `pip freeze > requirements.txt`)*
+
+5.  **Run the Application:**
+
+    From the root of the `my_portfolio` directory (where `app.py` is):
+    ```bash
+    python app.py
+    ```
+
+6.  **Access the Website:**
+
+    Open your web browser and navigate to:
+    ```
+    http://127.0.0.1:5000/
+    ```
+
+## Usage
+
+*   **Home:** Browse the `index.html` content for an overview.
+*   **Navigation:** Use the navigation bar to move between sections (Home, About, Projects, Contact).
+*   **Contact Form:** Fill out the contact form. Upon submission, the details will be printed to your terminal where `app.py` is running. A success message will be flashed on the website.
+
+## Customization
+
+*   **Personal Information:** Update `index.html`, `about.html`, and `projects.html` with your own name, bio, skills, and project details.
+*   **Profile Picture:** Replace `static/img/profile.jpg` with your own image.
+*   **Styling:** Modify `static/css/style.css` to change the look and feel of the website to match your personal brand.
+*   **Contact Form:** To make the contact form send actual emails, you would need to integrate an email sending library (e.g., `Flask-Mail` or Python's `smtplib`) and configure email credentials (ideally using environment variables).
+
+## Future Enhancements (Ideas)
+
+*   Integrate a database (e.g., SQLite with Flask-SQLAlchemy) to manage project data more dynamically.
+*   Implement user authentication if dynamic content creation is desired.
+*   Add a blog section.
+*   Enhance front-end with JavaScript for interactive elements.
+*   Improve styling with a CSS framework like Bootstrap or Tailwind CSS.
+*   Implement proper email sending for the contact form.
+*   Deploy the application to a cloud platform (e.g., Heroku, Vercel, AWS, PythonAnywhere).
